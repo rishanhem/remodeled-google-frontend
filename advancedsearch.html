@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head> 
+    <title>Google Advanced Search</title>
+    <style>
+        div {
+            font-family: Calibri;
+        }
+        select{
+            font-family: Calibri;
+        }
+        .x {
+            width: 70%;
+            font-weight: bold;
+        }
+        input,select{
+            margin: 1%;
+            border-radius: 5px;
+        }
+        img {
+            width: 10%;
+            margin-top: 4%;
+            margin-right: 4%;
+        }
+    </style>
+</head>
+<body>
+    <a href = "index.html" style = "text-align: right;">Regular Search</a>
+    <a href = "imgsearch.html" style = "text-align: right;">Image Search</a>
+    <img src ="google.png" alt = "google" align = "right">
+    <div>
+        <h1>Find pages with all these...</h1>
+        <form action="https://www.google.com/search"> 
+            <div>
+                <input type = "text" name = "as_q" placeholder = "...all these words" class = "x">
+                <br>
+                <input type = "text" name = "as_epq" placeholder = "...this exact word or phrase" class = "x">
+                <br>
+                <input type = "text" name = "as_eq" placeholder = "...none of these words" class = "x">
+                <br>
+                <input type = "text" name = "as_oq" placeholder = "...any of these words" class = "x">
+                <br>
+                numbers ranging from
+                <input type = "text" name = "as_nlo" placeholder = "" class = "special">
+                to
+                <input type = "text" name = "as_nhi" placeholder = "">
+                <br>
+            </div>
+            <div>
+                choose a language:
+                <select  name="lr">
+                    <option value="lang_hi">hindi</option>
+                    <option value="lang_el">greek</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <br>
+                choose a region:
+                <select  name="cr">
+                    <option value="countryAF">afghanistan</option>
+                    <option value="lang_el">greek</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <br>
+                last updated:
+                <select  name="as_qdr">
+                    <option value="w">week</option>
+                    <option value="lang_el">greek</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <br>
+                choose a domain:
+                <input type = "text" name = "as_sitesearch">
+                <br>
+                terms appearing:
+                <select name = "as_occt">
+                    <option value="any">anywhere in the page</option>
+                    <option value="body">in the text of the page</option>
+                </select>
+                <br>
+                filetype:
+                <select name = "as_filetype">
+                    <option value = "">any format</option>
+                    <option value = "pdf">Adobe Acrobat(pdf)</option>
+                    <option value = "ps">Adobe Postscript</option>
+                </select>
+                <br>
+                usage license: 
+                <select name = "tbs">
+                    <option value = "">not filtered by license</option>
+                    <option value = "sur">free to use or share</option>
+                    <option value = "ps">Adobe Postscript</option>
+                </select>
+                <br>
+            </div>
+            <input type="submit" value="Advanced Search">
+        </form>
+    </div>
+</body>

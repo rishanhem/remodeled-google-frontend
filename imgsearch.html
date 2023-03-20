@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style> 
+            body {
+                background-color: #1F2F16;
+            }
+           input[type=text] {
+                width: 50%;
+                padding: 12px 20px;
+                margin-top:1vmax;
+                margin-left: 25vmax;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 17px;
+                box-sizing: border-box;
+            }
+
+            input[type=submit] {
+                width: 50%;
+                background-color: lightblue;
+                color: white;
+                padding: 14px 20px;
+                margin-top: 2vmax;
+                margin-left: 25vmax;
+                border: none;
+                border-radius: 17px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: lightskyblue;
+            }
+            #google{
+                margin-left:34vmax;
+                margin-top: 20vmax;
+                height: 10vmax;
+            }
+
+        </style>
+    </head>
+    <body>
+        <a href = "index.html" style = "text-align: right;">Regular Search</a>
+        <a href = "advancedsearch.html" style = "text-align: right;">Advanced Search</a>
+        <div>
+            <img id = "google" src ="google.png" alt = "google">
+            <form action="https://www.google.com/search">
+                <input type="text" name="q" placeholder = "search something">
+                <input type="hidden" id="custId" name="tbm" value="isch">
+                <input type="submit" value="Google Search" style ="color:black; font-weight: bold;">
+            </form>
+        </div>
+        
+    </body>
+</html>
