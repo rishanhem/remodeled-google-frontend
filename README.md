@@ -3,4 +3,4 @@ lowk ugly rn- this is a work in progress
 
 planning to make this fully functional
 
-[View Here]()
+[View Here](https://rishanhem.github.io/remodeled-google-frontend)
